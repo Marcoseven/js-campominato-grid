@@ -10,14 +10,43 @@ body {
 }
 /* /common_general_rules */
 
+/* utility */
+.m_left_right {
+	margin: 0 2rem;
+}
+/* /utility */
+
+/* main */
+main {
+	text-align: center;
+}
+
+/* #container_buttons  */
+#container_buttons {
+	margin: 5rem 0;
+}
+
+.button {
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+/* /#container_buttons */
+
 /* #container */
-#container {
+/* .grid */
+.grid {
 	width: 1000px;
 	min-width: 1000px;
 	margin: 2rem auto;
 	display: flex;
 	flex-wrap: wrap;
-    background-color: white;
+	background-color: white;
 }
 
 .cell {
@@ -27,4 +56,6 @@ body {
 	text-align: center;
 	line-height: 100px;
 }
+/* /.grid */
 /* /#container */
+/* /main */
