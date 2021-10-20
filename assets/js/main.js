@@ -12,10 +12,12 @@ Scriviamo prima cosa vogliamo fare passo passo in italiano, dividiamo il lavoro 
 */
 
 // alert
-alert("Scegli un livello di difficoltà");
+// alert("Scegli un livello di difficoltà");
 
 // DOM
-const element = document.querySelector(".grid");
+const grid_1 = document.getElementById("grid_1");
+const grid_2 = document.getElementById("grid_2");
+const grid_3 = document.getElementById("grid_3");
 const button_1 = document.getElementById("button_1");
 const button_2 = document.getElementById("button_2");
 const button_3 = document.getElementById("button_3");
@@ -24,7 +26,7 @@ const button_3 = document.getElementById("button_3");
 for (let i = 1; i <= 100; i++) {
 	const elementCell = document.createElement("div");
 	elementCell.insertAdjacentHTML("beforeend", `<div class="cell">${i}</div>`);
-	element.append(elementCell);
+	grid_1.append(elementCell);
 	elementCell.addEventListener("click", function () {
 		this.style.backgroundColor = "#4877f4";
 	});
@@ -34,7 +36,7 @@ for (let i = 1; i <= 100; i++) {
 for (let i = 1; i <= 81; i++) {
 	const elementCell = document.createElement("div");
 	elementCell.insertAdjacentHTML("beforeend", `<div class="cell">${i}</div>`);
-	element.append(elementCell);
+	grid_2.append(elementCell);
 	elementCell.addEventListener("click", function () {
 		this.style.backgroundColor = "#4877f4";
 	});
@@ -44,7 +46,7 @@ for (let i = 1; i <= 81; i++) {
 for (let i = 1; i <= 49; i++) {
 	const elementCell = document.createElement("div");
 	elementCell.insertAdjacentHTML("beforeend", `<div class="cell">${i}</div>`);
-	element.append(elementCell);
+	grid_3.append(elementCell);
 	elementCell.addEventListener("click", function () {
 		this.style.backgroundColor = "#4877f4";
 	});
@@ -52,13 +54,14 @@ for (let i = 1; i <= 49; i++) {
 
 // EventListener
 button_1.addEventListener("click", function () {
-	document.getElementById("grid_1").classList.add("active");
+	grid_1.classList.add("active");
+	grid_1.classList.add("div");
 });
 
 button_2.addEventListener("click", function () {
-	document.getElementById("grid_2").classList.add("active");
+	grid_2.classList.add("active");
 });
 
 button_3.addEventListener("click", function () {
-	document.getElementById("grid_3").classList.add("active");
+	grid_3.classList.add("active");
 });
