@@ -11,23 +11,41 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 Scriviamo prima cosa vogliamo fare passo passo in italiano, dividiamo il lavoro in micro problemi.
 */
 
+// alert
+alert("Scegli un livello di difficoltà");
+
 // DOM
-const element = document.getElementById("container");
+const element = document.querySelector(".grid");
+const button_1 = document.getElementById("button_1");
+const button_2 = document.getElementById("button_2");
+const button_3 = document.getElementById("button_3");
 
 // ciclo for per difficoltà 1
 for (let i = 1; i <= 100; i++) {
-	// creato elemento DOM da mettere nella gliglia (cella)
 	const elementCell = document.createElement("div");
-	// aggiunta classe e variabile i all'elemento creato in precedenza
-	elementCell.insertAdjacentHTML(
-		"beforeend",
-		`<div class="cell">${i}</div>`
-	);
-	// appeso elemento creato prima al container
+	elementCell.insertAdjacentHTML("beforeend", `<div class="cell">${i}</div>`);
 	element.append(elementCell);
-	// inserito un EventListener a ciascun elemento creato nel ciclo
 	elementCell.addEventListener("click", function () {
-		// modificato il colore dell'elemento con style
+		this.style.backgroundColor = "#4877f4";
+	});
+}
+
+// ciclo for per difficoltà 2
+for (let i = 1; i <= 81; i++) {
+	const elementCell = document.createElement("div");
+	elementCell.insertAdjacentHTML("beforeend", `<div class="cell">${i}</div>`);
+	element.append(elementCell);
+	elementCell.addEventListener("click", function () {
+		this.style.backgroundColor = "#4877f4";
+	});
+}
+
+// ciclo for per difficoltà 3
+for (let i = 1; i <= 49; i++) {
+	const elementCell = document.createElement("div");
+	elementCell.insertAdjacentHTML("beforeend", `<div class="cell">${i}</div>`);
+	element.append(elementCell);
+	elementCell.addEventListener("click", function () {
 		this.style.backgroundColor = "#4877f4";
 	});
 }
