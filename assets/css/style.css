@@ -1,0 +1,30 @@
+/* common_general_rules */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+/* /common_general_rules */
+
+/* #container */
+#container {
+	width: 1000px;
+	min-width: 1000px;
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+    background-color: white;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 100px;
+}
+/* /#container */
