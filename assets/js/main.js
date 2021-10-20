@@ -49,3 +49,16 @@ for (let i = 1; i <= 49; i++) {
 		this.style.backgroundColor = "#4877f4";
 	});
 }
+
+// EventListener
+button_1.addEventListener("click", function () {
+	document.getElementById("grid_1").classList.add("active");
+});
+
+button_2.addEventListener("click", function () {
+	document.getElementById("grid_2").classList.add("active");
+});
+
+button_3.addEventListener("click", function () {
+	document.getElementById("grid_3").classList.add("active");
+});
