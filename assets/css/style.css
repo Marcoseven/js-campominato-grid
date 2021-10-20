@@ -40,8 +40,8 @@ main {
 
 /* #container */
 /* .grid */
-.active{
-	display: block;
+.active {
+	display: inline-flex !important;
 }
 
 .grid {
