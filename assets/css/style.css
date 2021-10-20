@@ -40,6 +40,10 @@ main {
 
 /* #container */
 /* .grid */
+.active{
+	display: block;
+}
+
 .grid {
 	width: 1000px;
 	min-width: 1000px;
@@ -47,6 +51,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: white;
+	display: none;
 }
 
 .cell {
